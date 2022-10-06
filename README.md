@@ -2,17 +2,7 @@
 
 ![Clerk site Image](https://res.cloudinary.com/dub20ptvt/image/upload/v1665094543/hcmgdw4wyixrorybwuff.png)
 
-Deployed Site: [kpop-stack.netlify.app](https://kpop-stack.netlify.app)
-
 Learn more about [Clerk](https://clerk.dev).
-
-```
-npx create-remix --template netlify-templates/kpop-stack
-```
-
-Click this button to create a new Github repo, new Netlify project and deploy this stack to a [CDN](https://jamstack.org/glossary/cdn/).
-
-[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/kpop-stack)
 
 ## What's in the stack
 
