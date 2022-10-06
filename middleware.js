@@ -1,8 +1,9 @@
 import { withClerkMiddleware, getAuth } from '@clerk/nextjs/server'
 import { NextResponse } from 'next/server'
 
+const publicPaths = ['/', '/sign-in', '/sign-up']
+
 export default withClerkMiddleware(req => {
-  const publicPaths = ['/', '/sign-in', '/sign-up']
   if (publicPaths.some(path => req.nextUrl.pathname.startsWith(path))) {
     return NextResponse.next()
   }
