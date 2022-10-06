@@ -12,4 +12,4 @@ export default withClerkMiddleware(req => {
   }
 })
 
-export const config = { matcher: '/((?!_next|static|.*\\..*|favicon.ico).*)' }
+export const config = { matcher: '/((?!_next|static|.*\\..*).*)' }
