@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server'
 const publicPaths = ['/sign-in', '/sign-up']
 
 export default withClerkMiddleware(req => {
-  console.log(req.nextUrl.pathname)
+  //Check if it is in the publicPages or if it is the homepage
   if (
     publicPaths.some(path => req.nextUrl.pathname.startsWith(path)) ||
     req.nextUrl.pathname === '/'
@@ -14,9 +14,8 @@ export default withClerkMiddleware(req => {
   }
   const { userId } = getAuth(req)
   if (!userId) {
-    return NextResponse.redirect(new URL('/sign-in', req.url))
+    return NextResponse.redirect(new URL('/', req.url))
   }
-  return NextResponse.redirect(new URL('/sign-in', req.url))
 })
 
 export const config = { matcher: '/((?!_next|static|.*\\..*).*)' }
