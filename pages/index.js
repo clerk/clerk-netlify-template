@@ -34,7 +34,7 @@ export default function Home() {
               </div>
 
               <div className="w-full lg:my-px lg:px-px lg:w-1/2 xl:my-3 xl:px-3 xl:w-1/2">
-                <SignIn signUpUrl="/sign-up" afterSignInUrl="/user-profile" />
+                <SignIn signUpUrl="/sign-up" redirectUrl="/user-profile" />
               </div>
             </div>
           </div>
